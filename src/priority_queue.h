@@ -7,14 +7,13 @@
 #include <vector>
 #include <ranges>
 #include <algorithm>
-#include <compare>
 
 template<typename T>
 class priority_queue {
 
 	template<typename Tp>
 	struct element_t {
-		uint priority;
+        uint priority;
 		Tp data;
 
 		element_t(uint priority, Tp data): priority(priority), data(data){}
